@@ -2,7 +2,7 @@
 
 import { ArrowUp, Mail } from "lucide-react";
 
-import { GitHubIcon } from "@/components/ui";
+import { GitHubIcon, LinkedInIcon } from "@/components/ui";
 import { PROFILE } from "@/lib/content";
 import type { StatsView } from "@/lib/types";
 
@@ -37,6 +37,18 @@ export default function Footer({ stats }: { stats: StatsView }) {
             >
               <GitHubIcon className="h-3.5 w-3.5" />
               {PROFILE.githubLabel}
+            </a>
+
+            <a
+              href={PROFILE.linkedin}
+              target="_blank"
+              rel="noreferrer noopener"
+              data-cursor="label"
+              data-cursor-label="VISIT"
+              className="glass inline-flex items-center gap-2.5 rounded-full px-4 py-3 font-mono text-[10px] tracking-[0.16em] text-white/80 uppercase transition-colors duration-500 hover:text-white"
+            >
+              <LinkedInIcon className="h-3.5 w-3.5" />
+              {PROFILE.linkedinLabel}
             </a>
 
             <a

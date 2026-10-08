@@ -209,7 +209,7 @@ export default function Hero() {
           <span className="eyebrow text-white/45">Scroll to explore</span>
         </div>
         <p className="hidden max-w-[30ch] text-right font-mono text-[10px] tracking-[0.2em] text-white/35 uppercase sm:block">
-          Next.js · React · GSAP · Laravel
+          Next.js · TypeScript · PostgreSQL · Supabase
           <br />
           {PROFILE.overview.split(",")[0]}
         </p>

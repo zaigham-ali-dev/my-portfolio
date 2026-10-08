@@ -6,9 +6,10 @@ import { useGsapContext } from "@/components/AppReady";
 import { MARQUEE_ITEMS } from "@/lib/content";
 import { gsap, prefersReducedMotion } from "@/lib/animation";
 
+const mid = Math.ceil(MARQUEE_ITEMS.length / 2);
 const ROWS = [
-  MARQUEE_ITEMS.slice(0, 8),
-  MARQUEE_ITEMS.slice(8),
+  MARQUEE_ITEMS.slice(0, mid),
+  MARQUEE_ITEMS.slice(mid),
 ];
 
 function Row({ items }: { items: string[] }) {

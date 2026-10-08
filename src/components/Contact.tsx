@@ -2,11 +2,11 @@
 
 import emailjs from "@emailjs/browser";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
-import { Check, Copy, Mail, MapPin, Phone, Send } from "lucide-react";
+import { Check, Copy, Mail, Phone, Send } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 import { useGsapContext } from "@/components/AppReady";
-import { GitHubIcon, MagneticButton, Reveal } from "@/components/ui";
+import { GitHubIcon, LinkedInIcon, MagneticButton, Reveal } from "@/components/ui";
 import { PROFILE } from "@/lib/content";
 import { gsap, prefersReducedMotion } from "@/lib/animation";
 import type { StatsView } from "@/lib/types";
@@ -248,9 +248,18 @@ export default function Contact({ stats }: { stats: StatsView }) {
               </div>
 
               <div data-contact-detail className="glass rounded-2xl p-5">
-                <MapPin size={16} className="text-accent" />
-                <p className="eyebrow mt-4">Studio</p>
-                <p className="mt-2 text-sm text-white/85">{PROFILE.location}</p>
+                <LinkedInIcon className="h-4 w-4 text-accent" />
+                <p className="eyebrow mt-4">LinkedIn</p>
+                <a
+                  href={PROFILE.linkedin}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  data-cursor="label"
+                  data-cursor-label="VISIT"
+                  className="link-underline mt-2 block text-sm break-all text-white"
+                >
+                  {PROFILE.linkedinLabel}
+                </a>
               </div>
 
               <div data-contact-detail className="glass rounded-2xl p-5">

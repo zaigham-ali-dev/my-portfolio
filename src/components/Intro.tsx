@@ -104,7 +104,7 @@ export default function Intro() {
             <div className="mt-6 space-y-4">
               <p className="display text-4xl text-white">06</p>
               <p className="max-w-[24ch] text-xs leading-relaxed tracking-[0.14em] text-fog uppercase">
-                Shipped client experiences across real estate, travel, AI and non-profit
+                Shipped client experiences across real estate, travel, on-demand marketplaces, AI and non-profit
                 platforms.
               </p>
             </div>
@@ -116,8 +116,8 @@ export default function Intro() {
             </p>
             <p className="max-w-[62ch] text-sm leading-relaxed text-fog sm:text-base">
               {PROFILE.overview} Every build pairs a considered system — typography,
-              spacing, motion — with a real full stack behind it: Next.js and React on
-              the surface, Laravel, Node.js and Firebase underneath. The result is work
+              spacing, motion — with a real full stack behind it: Next.js, React and TypeScript on
+              the surface, PostgreSQL, Supabase, Drizzle ORM, Laravel, Node.js and Firebase underneath. The result is work
               that looks premium and behaves even better.
             </p>
           </div>
